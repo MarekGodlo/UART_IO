@@ -26,7 +26,7 @@ void UART_IO_Init(UART_IO_HandleTypeDef *huartio) {
     p_handler = huartio;
 }
 
-void UART_IO_TransferCallback() {
+void UART_IO_TransferCallback(void) {
     is_busy = false;
 
     UART_IO_BUFFER.tail = (UART_IO_BUFFER.tail + last_buffer_length) % UART_IO_BUFFER.size;

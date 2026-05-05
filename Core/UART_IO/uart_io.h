@@ -42,7 +42,7 @@ void UART_IO_Init(UART_IO_HandleTypeDef *huartio);
  * @brief Sends buffer data into transmission.
  * @warning This function must be called by UART DMA tx complete callback.
  */
-void UART_IO_TransferCallback();
+void UART_IO_TransferCallback(void);
 
 /**
  * @brief Writes data into the buffer.
